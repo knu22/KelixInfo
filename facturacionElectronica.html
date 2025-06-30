@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="¿Debes implementar facturación electrónica en El Salvador? Esta guía te explica requisitos, pasos, errores comunes, beneficios y más. ¡Entiende el sistema DTE fácilmente!">
+  <title>Guía: Facturación electrónica en El Salvador - Kelix</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Guía completa de facturación electrónica en El Salvador - Kelix</h1>
+  </header>
+
+  <nav class="nav">
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/facturacionElectronica.html">Facturación Electrónica</a></li>
+    </ul>
+  </nav>
+
+  <main class="facturacion">
+    <h2>Guía definitiva: Facturación electrónica en El Salvador</h2>
+
+    <section>
+      <h3>¿Qué es la facturación electrónica?</h3>
+      <p>La facturación electrónica es un sistema de emisión de comprobantes fiscales digitales que busca modernizar el control tributario y simplificar los procesos contables. Sustituye los documentos impresos por versiones digitales llamadas Documentos Tributarios Electrónicos (DTE), los cuales tienen la misma validez legal.</p>
+    </section>
+
+    <section>
+      <h3>¿Es obligatorio?</h3>
+      <p>Sí. Desde el 1 de enero de 2023, la Dirección General de Impuestos Internos (DGII) estableció la obligación gradual de implementar la facturación electrónica para determinados sectores. A partir del 1 de abril de 2024, todos los contribuyentes inscritos en el IVA deben adherirse al sistema de DTE, salvo algunas exenciones específicas.</p>
+    </section>
+
+    <section>
+      <h3>Requisitos para ser aprobado en la facturación electrónica</h3>
+      <ul>
+        <li>Contar con NIT activo vinculado a una actividad económica formalmente registrada.</li>
+        <li>Estar al día con las obligaciones tributarias (sin omisiones graves ni bloqueos).</li>
+        <li>Tener un usuario activo en el portal del Ministerio de Hacienda con acceso al sistema DTE.</li>
+        <li>Obtener una firma electrónica vigente, emitida por un certificador autorizado por el gobierno salvadoreño.</li>
+        <li>Disponer de una dirección de correo electrónico oficial donde se recibirán notificaciones del sistema.</li>
+        <li>En algunos casos, se debe presentar información adicional como:
+          <ul>
+            <li>Catálogo de productos o servicios que ofrece el negocio.</li>
+            <li>Estructura organizativa del contribuyente.</li>
+            <li>Inventario inicial de bienes para empresas que trabajan con stock físico.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Pasos para implementar la facturación electrónica</h3>
+      <ol>
+        <li>Accede al portal web del Ministerio de Hacienda y solicita tu habilitación como emisor de DTE.</li>
+        <li>Firma el acuerdo de incorporación digital proporcionado por la DGII.</li>
+        <li>Configura tu firma electrónica y vincúlala a tu cuenta en el sistema.</li>
+        <li>Selecciona una solución de facturación: puede ser un desarrollo propio, proveedor certificado o herramientas que el mismo Ministerio ofrece.</li>
+        <li>Integra tu sistema con los servicios web del Ministerio, cumpliendo con los formatos XML y validaciones exigidas.</li>
+        <li>Realiza pruebas de emisión de DTE en el entorno de certificación.</li>
+        <li>Una vez aprobado, comienza a emitir documentos electrónicos oficialmente desde la fecha autorizada.</li>
+      </ol>
+    </section>
+
+   <section>
+      <h3>Funcionamiento básico del sistema DTE</h3>
+      <p>El sistema de Documentos Tributarios Electrónicos (DTE) opera mediante un proceso estructurado que garantiza la validez fiscal de cada comprobante emitido. Todo inicia en el sistema de facturación del contribuyente, el cual debe estar debidamente habilitado y configurado para generar documentos electrónicos en formato XML, cumpliendo con el esquema técnico definido por la Dirección General de Impuestos Internos (DGII).</p>
+      <p>Cuando se realiza una venta, el sistema registra los productos o servicios adquiridos, calcula los impuestos correspondientes y genera un archivo XML con todos los datos requeridos: identificación del emisor y receptor, detalle de la operación, códigos de producto, totales, y forma de pago. Este archivo es firmado digitalmente usando un certificado de firma electrónica emitido por un proveedor autorizado.</p>
+      <p>Una vez firmado, el archivo XML se transmite a los servidores del Ministerio de Hacienda a través de sus servicios web. El sistema DTE valida la estructura, integridad y autenticidad del documento. Si cumple con todos los requisitos, Hacienda lo acepta, le asigna un código único de identificación (UUID) y lo devuelve al emisor con su estado aprobado.</p>
+      <p>El documento aprobado puede entonces ser enviado al cliente vía correo electrónico u otros medios digitales. Este proceso debe realizarse en tiempo casi real para cumplir con la normativa vigente y asegurar que cada comprobante tenga respaldo oficial al momento de su emisión.</p>
+    </section>
+
+    <section>
+    <h3>¿Qué equipo se necesita para facturar electrónicamente?</h3>
+    <p>Para implementar la facturación electrónica en su forma más básica, no se requiere una infraestructura compleja ni costosa. Un negocio puede cumplir con los requisitos mínimos utilizando únicamente una computadora con acceso a internet, una impresora térmica (de las que utilizan papel térmico en rollo) y un software autorizado que permita generar los archivos XML requeridos por el Ministerio de Hacienda.</p>
+    <p>La computadora debe tener instalado un sistema de facturación compatible con el esquema DTE. Este software será responsable de generar el archivo XML con toda la información tributaria, firmarlo digitalmente con un certificado válido, y adicionalmente generar una versión PDF del comprobante para entrega al cliente en formato físico.</p>
+    <p>La impresora térmica es suficiente para emitir comprobantes impresos en puntos de venta físicos, ya que muchos negocios no requieren impresoras láser o de inyección. Esta solución es ideal para comercios pequeños, ventas móviles o negocios que recién están migrando al entorno digital.</p>
+    <p>En resumen, el equipo básico mínimo para cumplir con la normativa incluye: una computadora, una impresora térmica, conexión a internet, firma electrónica y un sistema que esté certificado o validado para emitir DTE conforme al estándar XML del Ministerio de Hacienda.</p>
+    </section>
+
+    <section>
+      <h3>¿Qué datos deben incluirse en una factura electrónica válida?</h3>
+      <p>Al momento de emitir una factura electrónica, se deben incluir ciertos datos mínimos para que el sistema DTE del Ministerio de Hacienda la apruebe. Estos datos se estructuran en un archivo XML que debe cumplir con el esquema técnico oficial publicado por la DGII. Sin embargo, no todos los campos son obligatorios en todos los tipos de factura.</p>
+      <p>En el caso de una factura de consumidor final, los requisitos son menos estrictos: no es necesario indicar el nombre o el NIT del cliente. Basta con colocar la leyenda <strong>\"Consumidor Final\"</strong> como nombre, y usar códigos genéricos definidos por Hacienda para los productos o servicios si no se cuenta con una nomenclatura específica. Incluso el campo del correo electrónico del receptor puede quedar vacío o tener un valor genérico.</p>
+      <p>En contraste, si se trata de una factura de crédito fiscal o una factura dirigida a otro contribuyente, es obligatorio incluir datos completos del cliente: nombre o razón social, NIT, NRC, dirección, correo electrónico y tipo de documento. Estos deben coincidir con los registros fiscales del cliente para evitar rechazos.</p>
+      <p>Además, es fundamental detallar correctamente la descripción de los bienes o servicios, los precios unitarios, el subtotal, el IVA, retenciones si aplican, forma de pago y totales. Todos estos elementos deben estar claramente definidos en el XML y pasar las validaciones automáticas de Hacienda.</p>
+      <p>Por eso, es recomendable que el sistema de facturación esté programado para identificar el tipo de documento y adaptar los campos requeridos según el caso, reduciendo errores y evitando rechazos por parte del sistema DTE.</p>
+    </section>
+
+    <section>
+      <h3>¿Es obligatorio tener un inventario digital para emitir facturas electrónicas?</h3>
+      <p>Contar con un inventario digital no es un requisito obligatorio para implementar la facturación electrónica en El Salvador. El sistema DTE del Ministerio de Hacienda no exige que cada contribuyente tenga un sistema formal de inventario enlazado a su facturación. Sin embargo, sí se debe proporcionar información mínima sobre cada bien o servicio facturado.</p>
+      <p>Esto significa que, aunque no necesitas llevar un inventario automatizado o conectado directamente a tu sistema de facturación, sí deberás escribir manualmente la descripción de los productos, su precio, cantidad y código (si aplica) en cada factura generada.</p>
+      <p>Tener un inventario digital vinculado al sistema de facturación ofrece ventajas importantes. Por ejemplo, te permite ahorrar tiempo al seleccionar productos ya registrados con descripciones predefinidas, evitar errores al digitar y facilitar el seguimiento del stock disponible. Esto es especialmente útil para negocios con gran volumen de ventas o con muchos productos diferentes.</p>
+      <p>Además, si en el futuro decides implementar controles internos, reportes automáticos o integrar tu facturación con otras herramientas contables o logísticas, el inventario digital será una base fundamental. Por lo tanto, no es obligatorio, pero sí altamente recomendable para mejorar la eficiencia operativa.</p>
+    </section>
+
+    <section>
+      <h3>¿Qué pasa si me equivoco en una factura electrónica ya emitida?</h3>
+      <p>Equivocarse al emitir una factura electrónica es más común de lo que parece, especialmente cuando se está iniciando en el sistema DTE. Sin embargo, es importante saber que una vez que un Documento Tributario Electrónico (DTE) ha sido aprobado por el Ministerio de Hacienda, no puede ser modificado ni eliminado directamente. La solución depende del tipo de error cometido.</p>
+      <p><strong>1. Si el error es menor (por ejemplo: error tipográfico o dato opcional):</strong> No es necesario anular ni hacer ninguna acción formal. El documento seguirá siendo válido fiscalmente siempre que los datos esenciales estén correctos (como el monto, el tipo de documento, o el tipo de cliente).</p>
+      <p><strong>2. Si el error afecta información clave (monto, NIT del cliente, tipo de documento):</strong> En este caso, sí debe emitirse una nota de crédito para anular total o parcialmente la factura, y luego generar una nueva factura con los datos correctos.</p>
+      <p><strong>3. ¿Cómo se emite una nota de crédito?</strong> Es un documento electrónico autorizado por Hacienda que revierte total o parcialmente una factura anterior. Debe hacer referencia directa al número del documento original y estar firmada electrónicamente, igual que una factura normal. Se presenta al DTE como un nuevo documento vinculado al anterior.</p>
+      <p><strong>4. ¿Se puede eliminar un DTE que ya fue aceptado?</strong> No. Una vez emitido y aceptado por Hacienda, el DTE queda registrado en la base fiscal y no puede ser borrado ni eliminado. Solo puede ser anulado mediante documentos complementarios como notas de crédito o débito.</p>
+      <p><strong>Recomendación:</strong> Antes de emitir una factura, revisa cuidadosamente los datos del cliente, los montos, el tipo de documento y la firma digital. Además, capacita a tu personal para minimizar errores en el proceso de emisión.</p>
+    </section>
+
+    <section>
+      <h3>Errores comunes al facturar electrónicamente (y cómo evitarlos)</h3>
+      <p>Aunque los sistemas de facturación electrónica están diseñados para automatizar y simplificar el proceso, existen errores frecuentes que pueden provocar que el Ministerio de Hacienda rechace un Documento Tributario Electrónico (DTE). Conocer estos fallos comunes te permite evitarlos desde el inicio y mantener tu operación sin interrupciones.</p>
+      <p><strong>1. Firmar con un certificado vencido:</strong> uno de los errores más frecuentes es intentar firmar electrónicamente un documento usando un certificado digital caducado. Asegúrate de renovar tu firma electrónica a tiempo.</p>
+      <p><strong>2. Formato XML inválido:</strong> si el archivo generado por tu sistema de facturación no cumple con el esquema XML oficial del DTE (estructuras, etiquetas, orden), el documento será rechazado. Esto ocurre comúnmente con desarrollos propios que no han sido validados correctamente.</p>
+      <p><strong>3. Datos incompletos o incorrectos del receptor:</strong> en documentos como facturas de crédito fiscal, es obligatorio incluir NIT, nombre y dirección del cliente. Si alguno de estos campos está mal escrito o falta, el DTE será rechazado.</p>
+      <p><strong>4. No declarar impuestos correctamente:</strong> errores en el cálculo del IVA, omisiones de retenciones o percepciones pueden invalidar la factura. Asegúrate de que el sistema haga los cálculos conforme a la normativa vigente.</p>
+      <p><strong>5. No enviar el documento al DTE en tiempo real:</strong> el comprobante debe transmitirse al Ministerio de Hacienda inmediatamente después de su emisión. Guardarlo “en cola” o enviarlo más tarde puede ocasionar problemas de validez.</p>
+      <p><strong>6. Código de producto inexistente:</strong> si tu sistema está vinculado a un catálogo de productos, es importante que todos los códigos estén bien definidos y sean válidos. Usar códigos genéricos en documentos que requieren detalle completo también puede ser motivo de rechazo.</p>
+      <p>Para evitar estos errores, asegúrate de utilizar un software actualizado, mantener tu firma electrónica vigente, validar los datos antes de emitir y revisar los reportes de error que Hacienda te envía si un DTE no es aceptado.</p>
+    </section>
+
+    <section>
+      <h3>Beneficios reales de implementar la facturación electrónica en tu negocio</h3>
+      <p>La facturación electrónica no solo es una exigencia legal para muchos contribuyentes en El Salvador, sino también una oportunidad para modernizar y optimizar procesos internos. Implementarla correctamente trae múltiples beneficios tangibles que impactan tanto en lo operativo como en lo económico.</p>
+
+      <p>Entre las principales ventajas se encuentran:</p>
+      <ul>
+        <li><strong>Reducción de costos:</strong> se elimina el uso de papel, tinta, y almacenamiento físico de documentos. Todo queda digitalizado.</li>
+        <li><strong>Mayor agilidad en la facturación:</strong> se pueden emitir comprobantes en segundos, sin necesidad de llenado manual.</li>
+        <li><strong>Control fiscal más eficiente:</strong> facilita la organización de ingresos, gastos y declaraciones tributarias.</li>
+        <li><strong>Menor margen de error:</strong> los sistemas automatizados reducen errores humanos en cálculos y formatos.</li>
+        <li><strong>Acceso rápido a documentos:</strong> permite consultar facturas emitidas en cualquier momento, desde cualquier lugar.</li>
+        <li><strong>Mejora la imagen de tu negocio:</strong> al utilizar tecnología moderna, tu empresa proyecta profesionalismo y confianza.</li>
+        <li><strong>Preparación para auditorías:</strong> contar con respaldo digital facilita la presentación de información ante Hacienda.</li>
+      </ul>
+
+      <p>En resumen, facturar electrónicamente es más que un requisito: es una herramienta para mejorar la productividad y dar un paso hacia la transformación digital de tu negocio.</p>
+    </section>
+
+      
+
+    <div class="donate">
+      <p>Este contenido es gratuito gracias a los lectores como tú. Si deseas apoyar este proyecto:</p>
+      <a href="https://www.paypal.com/donate/?hosted_button_id=7G6JJPDKYYNGJ" target="_blank">
+        <button>Invítame un café ☕</button>
+      </a>
+    </div>
+  </main>
+
+ <footer>
+  <p>&copy; 2025 Kelix. Todos los derechos reservados.</p>
+  <p><a href="index.html">Inicio</a> | <a href="facturacionElectronica.html">Facturación Electrónica</a></p>
+</footer>
+</body>
+</html>
